@@ -98,7 +98,6 @@ table {
 .sky_small{
     background-image: url("../images/sky.png");
     background-repeat: no-repeat;
-    
     position: relative;
     width: 100%;
     height: 500px;
@@ -448,3 +447,21 @@ table {
 	#menu li:hover > .no-transition {
 		display: block;
 	}
+
+/*Empezando por el cuerpo */
+
+.slider-wrapper { 
+	width: 71%;
+	margin: 100px auto;
+	position: absolute;
+	top:32%;
+	left: 14.5%;
+	z-index: 20;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

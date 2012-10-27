@@ -8,6 +8,8 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
 		<link rel="stylesheet" href="static/css/search.css" type="text/css" media="all">
+		<link rel="stylesheet" href="static/css/default/default.css" type="text/css" media="screen" />
+    	<link rel="stylesheet" href="static/css/nivo-slider.css" type="text/css" media="screen" />
 		<script charset="utf-8" type="text/javascript" src="../js/bsa.js"></script>
 		<script type="text/javascript" src="jquery-latest.min.js"></script>
 		<script type="text/javascript">
@@ -38,10 +40,17 @@
 		(function(){
 		  var bsa = document.createElement('script');
 			 bsa.async = true;
-			 bsa.src = 'static/js/adpacks-demo.js';
+			 //bsa.src = 'static/js/adpacks-demo.js';
 		  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
 		})();
 		</script>
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
 	</head>
 	<body class="fondo">
 		<div class="sky_small">
@@ -221,10 +230,25 @@
 					<li><a href="">Contact</a></li>
 				</ul>
 			</nav>
-		</div>
-<!-- cuerpo -->
 
-<!-- header -->
+		</div>
+
+<!-- slider of pictures -->
+			<div class="slider-wrapper theme-default">
+			    <div id="slider" class="nivoSlider">
+				        <img src="static/images/images-noticias/toystory.jpg" data-thumb="static/images/images-noticias/toystory.jpg" alt="" />
+					        <a href="http://dev7studios.com"><img src="static/images/images-noticias/up.jpg" data-thumb="static/images/images-noticias/up.jpg" alt="" title="This is an example of a caption" /></a>
+				        <img src="static/images/images-noticias/walle.jpg" data-thumb="static/images/images-noticias/walle.jpg" alt="" data-transition="slideInLeft" />
+				        <img src="static/images/images-noticias/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+				    </div>
+				    <div id="htmlcaption" class="nivo-html-caption">
+				        <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+				    </div>
+			</div>	
+
+
+
+
 
 	</body>
 </html>
