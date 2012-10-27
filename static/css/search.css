@@ -1,0 +1,64 @@
+.center {
+    margin: 0 auto;
+    position: relative;
+    width: 640px;
+}
+.aviaslider {
+    background: url("../images/preload.gif") no-repeat scroll center center #FFFFFF;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+}
+.aviaslider li, .aviaslider .featured {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.js_active .aviaslider li, .js_active .aviaslider .featured {
+    display: none;
+}
+.aviaslider img, .aviaslider a img, .aviaslider a {
+    border: medium none;
+    text-decoration: none;
+}
+.slidecontrolls {
+    float: left;
+    margin: 20px auto 0;
+    position: relative;
+}
+.slidecontrolls a {
+    background: url("../images/controlls.gif") no-repeat scroll center bottom transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 20px;
+    outline: medium none;
+    width: 18px;
+}
+.slidecontrolls a:hover, .slidecontrolls .active_item {
+    background: url("../images/controlls.gif") no-repeat scroll center top transparent;
+}
+.feature_excerpt {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 11.5px;
+    left: 0;
+    line-height: 1.5em;
+    padding: 14px 15px;
+    position: absolute;
+    width: 610px;
+    z-index: 2;
+}
+.feature_excerpt strong {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
