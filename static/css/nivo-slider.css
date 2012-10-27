@@ -1,9 +1,8 @@
 .nivoSlider {
 	position:relative;
 	width:100%;
-	
 	overflow: hidden;
-	top:-830px; 
+	top:-810px; 
 	
 }
 .nivoSlider img {
@@ -70,7 +69,6 @@
 .nivo-caption p {
 	padding:5px;
 	margin:0;
-
 }
 .nivo-caption a {
 	display:inline !important;
@@ -94,7 +92,7 @@
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
-	text-align:center;
+/*	text-align:center;*/
 	padding: 15px 0;
 
 }
