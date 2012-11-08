@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+		<link href="static/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
         <title>.::SALEM - INTERNACIONAL ::.</title>
         <meta name="description" content="Salem Internacional">
         <meta name="author" content="JED-Salem internacional">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="static/css/style.css" type="text/css" media="all">
-        <link rel="stylesheet" href="static/css/search.css" type="text/css" media="all">
+		<link rel="stylesheet" href="static/css/style_one.css" type="text/css" media="all">
+		<link rel="stylesheet" href="static/css/search.css" type="text/css" media="all">
         <link rel="stylesheet" href="static/css/default/default.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="static/css/nivo-slider.css" type="text/css" media="screen" />
         <script charset="utf-8" type="text/javascript" src="../js/bsa.js"></script>
@@ -56,7 +56,39 @@
         <script type="text/javascript" language="javascript">
             $(function() {
 
-                
+                //  Basic carousel, no options
+                $('#foo0').carouFredSel();
+
+                //  Basic carousel + timer
+                $('#foo1').carouFredSel({
+                    auto: {
+                        pauseOnHover: 'resume',
+                        progress: '#timer1'
+                    }
+                });
+
+                //  Scrolled by user interaction
+                $('#foo2').carouFredSel({
+                    auto: false,
+                    prev: '#prev2',
+                    next: '#next2',
+                    pagination: "#pager2",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    }
+                });
+
+                //  Variable number of visible items with variable sizes
+                $('#foo3').carouFredSel({
+                    width: 360,
+                    height: 'auto',
+                    prev: '#prev3',
+                    next: '#next3',
+                    auto: false
+                });
+
                 //  Responsive layout, resizing the items
                 $('#foo4').carouFredSel({
                     responsive: true,
@@ -72,35 +104,41 @@
                     }
                 });
 
+                //  Fuild layout, centering the items
+                $('#foo5').carouFredSel({
+                    width: '100%',
+                    scroll: 2
+                });
+
             });
         </script>
     </head>
     <body class="fondo">
-        <div class="prueba">
-            <div class="global-nav">
-                <div class="top">
-                    <div class="container_12">
-                        <div class="grid_1 prefix_11" style="margin-top: 5px;">
-                            <img src="static/images/espanol.png" width="35" height="35" title="Espanol" alt="Espanol"/>
-                            <img src="static/images/ingles.png"  width="35" height="35" title="Ingles" alt="Ingles"/>
-                        </div>
-                        <div class="logo_1">
-                            <img src="static/images/salem.png" width="280" height="240" title="Salem Internacional" />
-                        </div>
+    	<div class="prueba">
+	        <div class="global-nav">
+	            <div class="top">
+	                <div class="container_12">
+	                    <div class="grid_1 prefix_11" style="margin-top: 5px;">
+	                        <img src="static/images/espanol.png" width="35" height="35" title="Espanol" alt="Espanol"/>
+	                        <img src="static/images/ingles.png"  width="35" height="35" title="Ingles" alt="Ingles"/>
+	                    </div>
+	                    <div class="logo_1">
+	                		<img src="static/images/salem.png" width="280" height="240" title="Salem Internacional" />
+	            		</div>
                         <div class="logo_2">
                             <img src="static/images/vision.png" width="" height="150" title="Salem Internacional" />
                         </div>
-                    </div>
-                </div>
-                
+	                </div>
+	            </div>
+	            
 
-            </div>
+	        </div>
         </div>
-            <!-- Menu principal -->
-            <br/><br/><br>
-            <div id="cont">
-                <div id="login_text">
-                    <nav id="menu-wrap">    
+        <!-- Menu principal -->
+        <br/><br/><br>
+        <div id="cont">
+            <div id="login_text">
+                   <nav id="menu-wrap">    
                         <ul id="menu">
                             <li><a href="/">Inicio</a></li>
                             <li>
@@ -153,39 +191,13 @@
                             <li><a href="hola.php">Cultos y Eventos</a></li>
                         </ul>
                     </nav>
-                    <div class="slider-wrapper theme-default">
-                        <div id="slider" class="nivoSlider">
-                            <a href="http://dev7studios.com">
-                                <img src="static/images/images-noticias/Israel-Main-Web1.jpg" data-thumb="static/images/images-noticias/Israel-Main-Web.jpg" alt="" title="This is an example of a caption" />
-                            </a>
-                            <img src="static/images/images-noticias/gm-live-spa1.jpg" data-thumb="static/images/images-noticias/gm-live-spa.jpg" alt="" data-transition="slideInLeft" />
-                            <img src="static/images/images-noticias/SupernaturalRevolution_web_banner_SPA1.jpg" data-thumb="images/SupernaturalRevolution_web_banner_SPA.jpg" alt="" title="#htmlcaption" />
-                            <img style="width: 650px;" src="static/images/images-noticias/El-Tiempo-ha-Llegado21.jpg" data-thumb="El-Tiempo-ha-Llegado21.jpg" alt="" title="#htmlcaption" />
-                        </div>
-                        <div id="htmlcaption" class="nivo-html-caption">
-                            <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
-                        </div>
-                    </div>
-                </div>
-                <div class="list_carousel responsive">
-                    <ul id="foo4">
-                        <li><img src="static/images/images_carou/HOPbutton.jpg" /></li>
-                        <li><img src="static/images/images_carou/Israel2012carousel.jpg" /></li>
-                        <li><img src="static/images/images_carou/MISIONES.png" /></li>
-                        <li><img src="static/images/images_carou/SupernaturalRevolution_button_SPA.jpg" /></li>
-                        <li><img src="static/images/images_carou/TESTIMONIOS.png" /></li>
-                        <li><img src="static/images/images_carou/erjpub.png" /></li>
-                        <li><img src="static/images/images_carou/gmORGbtn.png" /></li>
-                        <li><img src="static/images/images_carou/primicias2012.png" /></li>
+ 
 
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-        <br />
 
             </div>
         </div>
 
-        <!-- slider of pictures -->
+
     </body>
+
 </html>
