@@ -52,17 +52,17 @@ table {
 /* End Reset */
 /* configurando header*/
 .fondo {
-/*   background-color: #eef6ff;
+    background-color: #eef6ff;
     background-attachment: fixed;
     background-image: url("../images/sky.png");
     background-repeat: no-repeat;
-    position: relative;*/
-background: url(../images/sky.png) no-repeat center center; 
+    position: relative;
+    /*background: url(../images/sky.png) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+*/
 }
 .global-nav {
     background: url("../images/win.png")no-repeat center center;
